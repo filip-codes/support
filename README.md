@@ -1,15 +1,9 @@
-# 🚀 TypeScript Skeleton
+# ⌨️ Support
 
-Start your next TypeScript package idea with this simple boilerplate.
+The Midonis Support package.
 
-## Getting Started
-
-- Install the dependencies: `npm install`
-- Execute the tests: `npm run test`
-- Check linter errors: `npm run lint`
-- Fix linter errors: `npm run lint:fix`
-- Build your files: `npm run build`
+## Introduction
 
 ## License
 
-@midonis/skeleton is an open-sourced software licensed under the [MIT license](LICENSE.md).
+@midonis/support is an open-sourced software licensed under the [MIT license](LICENSE.md).
