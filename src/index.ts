@@ -1,3 +1,3 @@
-import { Str } from './Str';
+import { Str } from "./Str";
 
 export { Str };
