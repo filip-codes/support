@@ -1,7 +1,7 @@
 {
-  "name": "@midonis/skeleton",
+  "name": "@midonis/support",
   "version": "1.0.0",
-  "description": "A skeleton for TypeScript packages.",
+  "description": "The Midonis Support package.",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "files": ["dist"],
@@ -13,10 +13,10 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/midonis/skeleton.git"
+    "url": "git+https://github.com/midonis/support.git"
   },
   "bugs": {
-    "url": "https://github.com/midonis/skeleton/issues"
+    "url": "https://github.com/midonis/support/issues"
   },
   "author": {
     "name": "Filip Petrovic",
