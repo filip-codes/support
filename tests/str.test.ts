@@ -12,4 +12,10 @@ describe("Str", () => {
       "midonisSupportPackage"
     );
   });
+
+  it("can make a string's first character uppercase", () => {
+    expect(Str.ucfirst("midonis")).toBe("Midonis");
+
+    expect(Str.of("midonis").ucfirst()).toBe("Midonis");
+  });
 });
