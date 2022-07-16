@@ -28,6 +28,15 @@ export class Stringable {
   }
 
   /**
+   * Make a string's first character lowercase.
+   *
+   * @returns string
+   */
+  public lcfirst(): string {
+    return this.value.charAt(0).toLowerCase() + this.value.slice(1);
+  }
+
+  /**
    * Make a string's first character uppercase.
    *
    * @returns string
