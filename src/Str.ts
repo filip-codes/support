@@ -10,4 +10,13 @@ export class Str {
   public static of(string: string): Stringable {
     return new Stringable(string);
   }
+
+  /**
+   * Convert a value to camel case.
+   *
+   * @returns string
+   */
+  public static camel(string: string): string {
+    return new Stringable(string).camel();
+  }
 }
