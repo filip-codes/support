@@ -19,6 +19,12 @@ describe("Str", () => {
     expect(Str.of("Midonis").lcfirst()).toBe("midonis");
   });
 
+  it("can convert the given string to lower-case", () => {
+    expect(Str.lower("MIDONIS")).toBe("midonis");
+
+    expect(Str.of("MIDONIS").lower()).toBe("midonis");
+  });
+
   it("can make a string's first character uppercase", () => {
     expect(Str.ucfirst("midonis")).toBe("Midonis");
 
