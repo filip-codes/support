@@ -6,7 +6,7 @@ The Midonis Support package.
 
 ### `Str.camel()`
 
-The `Str.camel` method converts the given string to `camelCase`
+The `Str.camel` method converts the given string to `camelCase`:
 
 ```ts
 import { Str } from "@midonis/support"
