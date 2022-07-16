@@ -13,6 +13,12 @@ describe("Str", () => {
     );
   });
 
+  it("can make a string's first character lowercase", () => {
+    expect(Str.lcfirst("Midonis")).toBe("midonis");
+
+    expect(Str.of("Midonis").lcfirst()).toBe("midonis");
+  });
+
   it("can make a string's first character uppercase", () => {
     expect(Str.ucfirst("midonis")).toBe("Midonis");
 
