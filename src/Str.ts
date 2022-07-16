@@ -14,6 +14,7 @@ export class Str {
   /**
    * Convert a value to camel case.
    *
+   * @param string string
    * @returns string
    */
   public static camel(string: string): string {
