@@ -26,4 +26,13 @@ export class Stringable {
         char.toUpperCase()
       );
   }
+
+  /**
+   * Make a string's first character uppercase.
+   *
+   * @returns string
+   */
+  public ucfirst(): string {
+    return this.value.charAt(0).toUpperCase() + this.value.slice(1);
+  }
 }
