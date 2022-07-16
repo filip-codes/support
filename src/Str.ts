@@ -32,6 +32,16 @@ export class Str {
   }
 
   /**
+   * Convert the given string to lower-case.
+   *
+   * @param string string
+   * @returns string
+   */
+  public static lower(string: string): string {
+    return new Stringable(string).lower();
+  }
+
+  /**
    * Make a string's first character uppercase.
    *
    * @param string string
