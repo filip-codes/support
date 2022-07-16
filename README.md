@@ -28,6 +28,18 @@ Str.lcfirst('FooBar')
 // fooBar
 ```
 
+### `Str.lower()`
+
+The `Str.lower` method converts the given string to lower-case:
+
+```ts
+import { Str } from "@midonis/support"
+
+Str.lower('FOOBAR')
+
+// foobar
+```
+
 ### `Str.ucfirst()`
 
 The `Str.ucfirst` method makes a string's first character uppercase:
