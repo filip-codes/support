@@ -20,4 +20,14 @@ export class Str {
   public static camel(string: string): string {
     return new Stringable(string).camel();
   }
+
+  /**
+   * Make a string's first character uppercase.
+   *
+   * @param string string
+   * @returns string
+   */
+  public static ucfirst(string: string): string {
+    return new Stringable(string).ucfirst();
+  }
 }
