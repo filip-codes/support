@@ -22,6 +22,16 @@ export class Str {
   }
 
   /**
+   * Make a string's first character lowercase.
+   *
+   * @param string string
+   * @returns string
+   */
+  public static lcfirst(string: string): string {
+    return new Stringable(string).lcfirst();
+  }
+
+  /**
    * Make a string's first character uppercase.
    *
    * @param string string
