@@ -37,6 +37,15 @@ export class Stringable {
   }
 
   /**
+   * Convert the given string to lower-case.
+   *
+   * @returns string
+   */
+  public lower(): string {
+    return this.value.toLowerCase();
+  }
+
+  /**
    * Make a string's first character uppercase.
    *
    * @returns string
