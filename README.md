@@ -16,6 +16,18 @@ Str.camel('foo_bar')
 // fooBar
 ```
 
+### `Str.ucfirst()`
+
+The `Str.ucfirst` method makes a string's first character uppercase:
+
+```ts
+import { Str } from "@midonis/support"
+
+Str.ucfirst('fooBar')
+
+// FooBar
+```
+
 ## License
 
 @midonis/support is an open-sourced software licensed under the [MIT license](LICENSE.md).
