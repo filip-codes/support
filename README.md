@@ -16,6 +16,18 @@ Str.camel('foo_bar')
 // fooBar
 ```
 
+### `Str.lcfirst()`
+
+The `Str.lcfirst` method makes a string's first character lowercase:
+
+```ts
+import { Str } from "@midonis/support"
+
+Str.lcfirst('FooBar')
+
+// fooBar
+```
+
 ### `Str.ucfirst()`
 
 The `Str.ucfirst` method makes a string's first character uppercase:
