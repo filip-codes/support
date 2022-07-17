@@ -16,6 +16,18 @@ Str.after('Hello World!', 'Hello')
 // ' World!'
 ```
 
+### `Str.afterLast()`
+
+The `Str.afterLast` method returns everything after the last occurrence of the given value in a string. The entire string will be returned if the value does not exist within the string:
+
+```ts
+import { Str } from "@midonis/support"
+
+Str.afterLast('App/Http/Controllers/Controller', '/')
+
+// 'Controller'
+```
+
 ### `Str.camel()`
 
 The `Str.camel` method converts the given string to `camelCase`:
