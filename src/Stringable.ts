@@ -40,6 +40,20 @@ export class Stringable {
   }
 
   /**
+   * Get the portion of a string before the first occurrence of a given value.
+   *
+   * @param search string
+   * @returns string
+   */
+  public before(search = ""): string {
+    return search === ""
+      ? this.value
+      : this.value.split(search)[0] != undefined
+      ? this.value.split(search)[0]
+      : this.value;
+  }
+
+  /**
    * Convert a value to camel case.
    *
    * @returns string
