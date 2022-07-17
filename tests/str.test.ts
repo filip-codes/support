@@ -45,6 +45,12 @@ describe("Str", () => {
     expect(Str.between("This is my string", "This", "string")).toBe(" is my ");
   });
 
+  it("can get the smallest possible portion of a string between two given values", () => {
+    expect(Str.betweenFirst("{midonis} is {awesome}", "{", "}")).toBe(
+      "midonis"
+    );
+  });
+
   it("can convert a value to camel case", () => {
     expect(Str.camel("Midonis_support_package")).toBe("midonisSupportPackage");
 
