@@ -52,6 +52,18 @@ Str.ucfirst('fooBar')
 // FooBar
 ```
 
+### `Str.upper()`
+
+The `Str.upper` method converts the given string to upper-case:
+
+```ts
+import { Str } from "@midonis/support"
+
+Str.upper('foobar')
+
+// FOOBAR
+```
+
 ## License
 
 @midonis/support is an open-sourced software licensed under the [MIT license](LICENSE.md).
