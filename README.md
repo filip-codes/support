@@ -4,6 +4,18 @@ The Midonis Support package.
 
 ## Introduction
 
+### `Str.after()`
+
+The `Str.after` method returns everything after the given value in a string. The entire string will be returned if the value does not exist within the string:
+
+```ts
+import { Str } from "@midonis/support"
+
+Str.after('Hello World!', 'Hello')
+
+// ' World!'
+```
+
 ### `Str.camel()`
 
 The `Str.camel` method converts the given string to `camelCase`:
