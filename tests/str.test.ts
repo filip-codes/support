@@ -25,6 +25,14 @@ describe("Str", () => {
     expect(Str.of("MIDONIS").lower()).toBe("midonis");
   });
 
+  it("can remove any occurrence of the given string in the subject", () => {
+    expect(Str.remove("m", "midonis")).toBe("idonis");
+    expect(Str.remove("m", "Midonis", false)).toBe("idonis");
+
+    expect(Str.of("midonis").remove("m")).toBe("idonis");
+    expect(Str.of("Midonis").remove("m", false)).toBe("idonis");
+  });
+
   it("can make a string's first character uppercase", () => {
     expect(Str.ucfirst("midonis")).toBe("Midonis");
 
