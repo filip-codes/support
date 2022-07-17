@@ -35,6 +35,17 @@ export class Str {
   }
 
   /**
+   * Get the portion of a string before the last occurrence of a given value.
+   *
+   * @param subject string
+   * @param search string
+   * @returns string
+   */
+  public static beforeLast(subject: string, search = ""): string {
+    return new Stringable(subject).beforeLast(search);
+  }
+
+  /**
    * Get a new stringable object from the given string.
    *
    * @param string string
