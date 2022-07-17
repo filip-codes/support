@@ -15,6 +15,16 @@ describe("Str", () => {
     expect(Str.of("Hello World!").after()).toBe("Hello World!");
   });
 
+  it("can return the remainder of a string after the last occurrence of a given value", () => {
+    expect(Str.afterLast("App/Http/Controllers/Controller", "/")).toBe(
+      "Controller"
+    );
+
+    expect(Str.of("App/Http/Controllers/Controller").afterLast("/")).toBe(
+      "Controller"
+    );
+  });
+
   it("can convert a value to camel case", () => {
     expect(Str.camel("Midonis_support_package")).toBe("midonisSupportPackage");
 
