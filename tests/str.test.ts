@@ -25,6 +25,16 @@ describe("Str", () => {
     );
   });
 
+  it("can get the portion of a string before the first occurrence of a given value", () => {
+    expect(Str.before("Hello World!", "World!")).toBe("Hello ");
+    expect(Str.before("Hello World!", "Filip")).toBe("Hello World!");
+    expect(Str.before("Hello World!")).toBe("Hello World!");
+
+    expect(Str.of("Hello World!").before("World!")).toBe("Hello ");
+    expect(Str.of("Hello World!").before("Filip")).toBe("Hello World!");
+    expect(Str.of("Hello World!").before()).toBe("Hello World!");
+  });
+
   it("can convert a value to camel case", () => {
     expect(Str.camel("Midonis_support_package")).toBe("midonisSupportPackage");
 
