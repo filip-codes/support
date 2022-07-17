@@ -25,7 +25,7 @@ import { Str } from "@midonis/support"
 
 Str.camel('foo_bar')
 
-// fooBar
+// 'fooBar'
 ```
 
 ### `Str.lcfirst()`
@@ -37,7 +37,7 @@ import { Str } from "@midonis/support"
 
 Str.lcfirst('FooBar')
 
-// fooBar
+// 'fooBar'
 ```
 
 ### `Str.lower()`
@@ -49,7 +49,7 @@ import { Str } from "@midonis/support"
 
 Str.lower('FOOBAR')
 
-// foobar
+// 'foobar'
 ```
 
 ### `Str.remove()`
@@ -61,7 +61,7 @@ import { Str } from "@midonis/support"
 
 Str.remove('o', 'fooBar')
 
-// fBar
+// 'fBar'
 ```
 
 You may also pass `false` as a third argument to the `remove` method to ignore case when removing strings.
@@ -75,7 +75,7 @@ import { Str } from "@midonis/support"
 
 Str.reverse('hello')
 
-// olleh
+// 'olleh'
 ```
 
 ### `Str.ucfirst()`
@@ -87,7 +87,7 @@ import { Str } from "@midonis/support"
 
 Str.ucfirst('fooBar')
 
-// FooBar
+// 'FooBar'
 ```
 
 ### `Str.upper()`
@@ -99,7 +99,7 @@ import { Str } from "@midonis/support"
 
 Str.upper('foobar')
 
-// FOOBAR
+// 'FOOBAR'
 ```
 
 ## License
