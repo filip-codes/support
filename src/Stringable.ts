@@ -28,6 +28,18 @@ export class Stringable {
   }
 
   /**
+   * Return the remainder of a string after the last occurrence of a given value.
+   *
+   * @param search string
+   * @returns string
+   */
+  public afterLast(search = ""): string {
+    if (search === "") return this.value;
+
+    return this.value.substring(this.value.lastIndexOf(search) + 1);
+  }
+
+  /**
    * Convert a value to camel case.
    *
    * @returns string
