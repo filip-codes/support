@@ -35,6 +35,12 @@ describe("Str", () => {
     expect(Str.of("Hello World!").before()).toBe("Hello World!");
   });
 
+  it("can get the portion of a string before the last occurrence of a given value", () => {
+    expect(Str.beforeLast("This is my string", "my")).toBe("This is ");
+
+    expect(Str.of("This is my string").beforeLast("my")).toBe("This is ");
+  });
+
   it("can convert a value to camel case", () => {
     expect(Str.camel("Midonis_support_package")).toBe("midonisSupportPackage");
 
