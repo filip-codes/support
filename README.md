@@ -54,6 +54,18 @@ Str.remove('o', 'fooBar')
 
 You may also pass `false` as a third argument to the `remove` method to ignore case when removing strings.
 
+### `Str.reverse()`
+
+The `Str.reverse` method reverses the given string:
+
+```ts
+import { Str } from "@midonis/support"
+
+Str.reverse('hello')
+
+// olleh
+```
+
 ### `Str.ucfirst()`
 
 The `Str.ucfirst` method makes a string's first character uppercase:
