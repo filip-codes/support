@@ -5,6 +5,16 @@ describe("Str", () => {
     expect(() => new Str()).not.toThrow(TypeError);
   });
 
+  it("can return the remainder of a string after the first occurrence of a given value", () => {
+    expect(Str.after("Hello World!", "Hello")).toBe(" World!");
+    expect(Str.after("Hello World!", "Filip")).toBe("Hello World!");
+    expect(Str.after("Hello World!")).toBe("Hello World!");
+
+    expect(Str.of("Hello World!").after("Hello")).toBe(" World!");
+    expect(Str.of("Hello World!").after("Filip")).toBe("Hello World!");
+    expect(Str.of("Hello World!").after()).toBe("Hello World!");
+  });
+
   it("can convert a value to camel case", () => {
     expect(Str.camel("Midonis_support_package")).toBe("midonisSupportPackage");
 
