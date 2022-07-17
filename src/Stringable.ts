@@ -20,7 +20,11 @@ export class Stringable {
    * @returns string
    */
   public after(search = ""): string {
-    return search === "" ? this.value : this.value.split(search)[1] != undefined ? this.value.split(search)[1] : this.value;
+    return search === ""
+      ? this.value
+      : this.value.split(search)[1] != undefined
+      ? this.value.split(search)[1]
+      : this.value;
   }
 
   /**
