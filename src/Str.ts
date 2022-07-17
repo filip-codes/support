@@ -60,6 +60,20 @@ export class Str {
   }
 
   /**
+   * Get the smallest possible portion of a string between two given values.
+   *
+   * @param subject string
+   * @param from string
+   * @param to string
+   * @returns string
+   */
+  public static betweenFirst(subject: string, from = "", to = ""): string {
+    if (from === "" || to === "") return subject;
+
+    return this.before(this.after(subject, from), to);
+  }
+
+  /**
    * Get a new stringable object from the given string.
    *
    * @param string string
