@@ -2,6 +2,17 @@ import { Stringable } from "./Stringable";
 
 export class Str {
   /**
+   * Return the remainder of a string after the first occurrence of a given value.
+   *
+   * @param subject string
+   * @param search string
+   * @returns string
+   */
+  public static after(subject: string, search = ""): string {
+    return new Stringable(subject).after(search);
+  }
+
+  /**
    * Get a new stringable object from the given string.
    *
    * @param string string
