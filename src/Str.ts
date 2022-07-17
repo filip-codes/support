@@ -13,6 +13,17 @@ export class Str {
   }
 
   /**
+   * Return the remainder of a string after the last occurrence of a given value.
+   *
+   * @param subject string
+   * @param search string
+   * @returns string
+   */
+  public static afterLast(subject: string, search = ""): string {
+    return new Stringable(subject).afterLast(search);
+  }
+
+  /**
    * Get a new stringable object from the given string.
    *
    * @param string string
