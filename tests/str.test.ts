@@ -30,4 +30,10 @@ describe("Str", () => {
 
     expect(Str.of("midonis").ucfirst()).toBe("Midonis");
   });
+
+  it("can convert the given string to upper-case", () => {
+    expect(Str.upper("midonis")).toBe("MIDONIS");
+
+    expect(Str.of("midonis").upper()).toBe("MIDONIS");
+  });
 });
