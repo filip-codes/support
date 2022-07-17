@@ -42,6 +42,22 @@ export class Str {
   }
 
   /**
+   * Remove any occurrence of the given string in the subject.
+   *
+   * @param search string
+   * @param string string
+   * @param caseSensitive boolean
+   * @returns string
+   */
+  public static remove(
+    search: string,
+    string: string,
+    caseSensitive = true
+  ): string {
+    return new Stringable(string).remove(search, caseSensitive);
+  }
+
+  /**
    * Make a string's first character uppercase.
    *
    * @param string string
