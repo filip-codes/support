@@ -59,6 +59,15 @@ export class Stringable {
   }
 
   /**
+   * Reverse the given string.
+   *
+   * @returns string
+   */
+  public reverse(): string {
+    return this.value.split("").reverse().join("");
+  }
+
+  /**
    * Make a string's first character uppercase.
    *
    * @returns string
