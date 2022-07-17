@@ -46,6 +46,19 @@ export class Stringable {
   }
 
   /**
+   * Remove any occurrence of the given string in the subject.
+   *
+   * @param search string
+   * @param caseSensitive boolean
+   * @returns string
+   */
+  public remove(search: string, caseSensitive = true): string {
+    if (caseSensitive) return this.value.replace(search, "");
+
+    return this.value.replace(new RegExp(search, "ig"), "");
+  }
+
+  /**
    * Make a string's first character uppercase.
    *
    * @returns string
