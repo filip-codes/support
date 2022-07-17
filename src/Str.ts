@@ -50,4 +50,14 @@ export class Str {
   public static ucfirst(string: string): string {
     return new Stringable(string).ucfirst();
   }
+
+  /**
+   * Convert the given string to upper-case.
+   *
+   * @param string string
+   * @returns string
+   */
+  public static upper(string: string): string {
+    return new Stringable(string).upper();
+  }
 }
