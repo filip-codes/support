@@ -64,6 +64,18 @@ Str.between('This is my string', 'This', 'string')
 // ' is my '
 ```
 
+### `Str.betweenFirst()`
+
+The `Str.betweenFirst` method returns the smallest possible portion of a string between two values:
+
+```ts
+import { Str } from "@midonis/support"
+
+Str.betweenFirst('{midonis} is {awesome}', '{', '}')
+
+// 'midonis'
+```
+
 ### `Str.camel()`
 
 The `Str.camel` method converts the given string to `camelCase`:
