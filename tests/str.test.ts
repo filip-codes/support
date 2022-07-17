@@ -33,6 +33,12 @@ describe("Str", () => {
     expect(Str.of("Midonis").remove("m", false)).toBe("idonis");
   });
 
+  it("can reverse the given string", () => {
+    expect(Str.reverse("midonis")).toBe("sinodim");
+
+    expect(Str.of("midonis").reverse()).toBe("sinodim");
+  });
+
   it("can make a string's first character uppercase", () => {
     expect(Str.ucfirst("midonis")).toBe("Midonis");
 
