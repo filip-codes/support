@@ -28,6 +28,18 @@ Str.afterLast('App/Http/Controllers/Controller', '/')
 // 'Controller'
 ```
 
+### `Str.before()`
+
+The `Str.before` method returns everything before the given value in a string. The entire string will be returned if the value does not exist within the string:
+
+```ts
+import { Str } from "@midonis/support"
+
+Str.before('Hello World!', 'World!')
+
+// 'Hello '
+```
+
 ### `Str.camel()`
 
 The `Str.camel` method converts the given string to `camelCase`:
