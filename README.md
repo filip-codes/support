@@ -52,6 +52,18 @@ Str.beforeLast('This is my string', 'my')
 // 'This is '
 ```
 
+### `Str.between()`
+
+The `Str.between` method returns the portion of a string between two values:
+
+```ts
+import { Str } from "@midonis/support"
+
+Str.between('This is my string', 'This', 'string')
+
+// ' is my '
+```
+
 ### `Str.camel()`
 
 The `Str.camel` method converts the given string to `camelCase`:
