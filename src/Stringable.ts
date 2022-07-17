@@ -53,4 +53,13 @@ export class Stringable {
   public ucfirst(): string {
     return this.value.charAt(0).toUpperCase() + this.value.slice(1);
   }
+
+  /**
+   * Convert the given string to upper-case.
+   *
+   * @returns string
+   */
+  public upper(): string {
+    return this.value.toUpperCase();
+  }
 }
