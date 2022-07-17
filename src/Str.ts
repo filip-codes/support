@@ -24,6 +24,17 @@ export class Str {
   }
 
   /**
+   * Get the portion of a string before the first occurrence of a given value.
+   *
+   * @param subject string
+   * @param search string
+   * @returns string
+   */
+  public static before(subject: string, search = ""): string {
+    return new Stringable(subject).before(search);
+  }
+
+  /**
    * Get a new stringable object from the given string.
    *
    * @param string string
