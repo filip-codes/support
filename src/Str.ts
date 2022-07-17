@@ -46,6 +46,20 @@ export class Str {
   }
 
   /**
+   * Get the portion of a string between two given values.
+   *
+   * @param subject string
+   * @param from string
+   * @param to string
+   * @returns string
+   */
+  public static between(subject: string, from = "", to = ""): string {
+    if (from === "" || to === "") return subject;
+
+    return this.beforeLast(this.after(subject, from), to);
+  }
+
+  /**
    * Get a new stringable object from the given string.
    *
    * @param string string
