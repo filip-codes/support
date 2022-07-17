@@ -40,6 +40,20 @@ Str.lower('FOOBAR')
 // foobar
 ```
 
+### `Str.remove()`
+
+The `Str.remove` method removes any occurrence of the given string in the subject:
+
+```ts
+import { Str } from "@midonis/support"
+
+Str.remove('o', 'fooBar')
+
+// fBar
+```
+
+You may also pass `false` as a third argument to the `remove` method to ignore case when removing strings.
+
 ### `Str.ucfirst()`
 
 The `Str.ucfirst` method makes a string's first character uppercase:
