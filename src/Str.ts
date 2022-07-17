@@ -58,6 +58,16 @@ export class Str {
   }
 
   /**
+   * Reverse the given string.
+   *
+   * @param value string
+   * @returns string
+   */
+  public static reverse(value: string) {
+    return new Stringable(value).reverse();
+  }
+
+  /**
    * Make a string's first character uppercase.
    *
    * @param string string
