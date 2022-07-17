@@ -54,6 +54,18 @@ export class Stringable {
   }
 
   /**
+   * Get the portion of a string before the last occurrence of a given value.
+   *
+   * @param search string
+   * @returns string
+   */
+  public beforeLast(search = ""): string {
+    if (search === "") return this.value;
+
+    return this.value.substring(0, this.value.lastIndexOf(search));
+  }
+
+  /**
    * Convert a value to camel case.
    *
    * @returns string
