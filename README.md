@@ -160,6 +160,22 @@ Str.finish('midonis/support/', '/')
 // 'midonis/support/'
 ```
 
+### `Str.is()`
+
+The `Str.is` method determines if a given string matches a given pattern. Asterisks may be used as wildcard values:
+
+```ts
+import { Str } from "@midonis/support"
+
+Str.is('foo*', 'foobar')
+
+// true
+
+Str.is('baz*', 'foobar')
+
+// false
+```
+
 ### `Str.lcfirst()`
 
 The `Str.lcfirst` method makes a string's first character lowercase:
