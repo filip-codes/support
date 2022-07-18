@@ -105,6 +105,17 @@ export class Str {
   }
 
   /**
+   * Determine if a given string contains all array values.
+   *
+   * @param value string
+   * @param needles string[]
+   * @returns boolean
+   */
+  public static containsAll(value: string, needles: string[]): boolean {
+    return new Stringable(value).containsAll(needles);
+  }
+
+  /**
    * Make a string's first character lowercase.
    *
    * @param string string
