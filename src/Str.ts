@@ -138,6 +138,17 @@ export class Str {
   }
 
   /**
+   * Determine if a given string matches a given pattern.
+   *
+   * @param pattern string
+   * @param value string
+   * @returns string
+   */
+  public static is(pattern: string, value: string): boolean {
+    return new Stringable(value).is(pattern);
+  }
+
+  /**
    * Make a string's first character lowercase.
    *
    * @param string string
