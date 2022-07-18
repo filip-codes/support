@@ -111,6 +111,23 @@ export class Stringable {
   }
 
   /**
+   * Determine if a given string ends with a given substring.
+   *
+   * @param needles string | string[]
+   * @returns boolean
+   */
+  public endsWith(needles: string | string[]): boolean {
+    if (typeof needles == "string")
+      return needles !== "" && this.value.endsWith(needles);
+
+    for (let i = 0; i < needles.length; i++) {
+      if (needles[i] !== "" && this.value.endsWith(needles[i])) return true;
+    }
+
+    return false;
+  }
+
+  /**
    * Make a string's first character lowercase.
    *
    * @returns string
