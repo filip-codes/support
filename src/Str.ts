@@ -94,6 +94,17 @@ export class Str {
   }
 
   /**
+   * Determine if a given string contains a given substring.
+   *
+   * @param value string
+   * @param needles string | string[]
+   * @returns boolean
+   */
+  public static contains(value: string, needles: string | string[]): boolean {
+    return new Stringable(value).contains(needles);
+  }
+
+  /**
    * Make a string's first character lowercase.
    *
    * @param string string
