@@ -73,6 +73,14 @@ describe("Str", () => {
     expect(Str.of("This is my string").contains(["my", "string"])).toBe(true);
   });
 
+  it("can determine if a given string ends with a given substring", () => {
+    expect(Str.endsWith("This is my string", "string")).toBe(true);
+    expect(Str.endsWith("This is my string", ["string", "awesome"])).toBe(true);
+
+    expect(Str.of("This is my string").endsWith("string")).toBe(true);
+    expect(Str.of("This is my string").endsWith(["string", "my"])).toBe(true);
+  });
+
   it("can make a string's first character lowercase", () => {
     expect(Str.lcfirst("Midonis")).toBe("midonis");
 
