@@ -80,6 +80,23 @@ export class Stringable {
   }
 
   /**
+   * Determine if a given string contains a given substring.
+   *
+   * @param needles string | string[]
+   * @returns boolean
+   */
+  public contains(needles: string | string[]): boolean {
+    if (typeof needles == "string")
+      return needles !== "" && this.value.includes(needles);
+
+    for (let i = 0; i < needles.length; i++) {
+      if (needles[i] !== "" && this.value.includes(needles[i])) return true;
+    }
+
+    return false;
+  }
+
+  /**
    * Make a string's first character lowercase.
    *
    * @returns string
