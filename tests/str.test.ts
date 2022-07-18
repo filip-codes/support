@@ -67,6 +67,12 @@ describe("Str", () => {
     expect(Str.of("This is my string").contains(["my", "awesome"])).toBe(true);
   });
 
+  it("can determine if a given string contains all array values", () => {
+    expect(Str.containsAll("This is my string", ["my", "string"])).toBe(true);
+
+    expect(Str.of("This is my string").contains(["my", "string"])).toBe(true);
+  });
+
   it("can make a string's first character lowercase", () => {
     expect(Str.lcfirst("Midonis")).toBe("midonis");
 
