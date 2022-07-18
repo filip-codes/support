@@ -122,6 +122,28 @@ Str.contains('This is my string', ['my', 'string'])
 // true
 ```
 
+### `Str.endsWith()`
+
+The `Str.endsWith` method determines if the given string ends with the given value:
+
+```ts
+import { Str } from "@midonis/support"
+
+Str.endsWith('This is my string', 'string')
+
+// true
+```
+
+You may also pass an array of values to determine if the given string ends with any of the values in the array:
+
+```ts
+import { Str } from "@midonis/support"
+
+Str.endsWith('This is my string', ['string', 'awesome'])
+
+// true
+```
+
 ### `Str.lcfirst()`
 
 The `Str.lcfirst` method makes a string's first character lowercase:
