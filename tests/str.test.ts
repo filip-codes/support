@@ -89,6 +89,14 @@ describe("Str", () => {
     expect(Str.of("midonis/support/").finish("/")).toBe("midonis/support/");
   });
 
+  it("can determine if a given string matches a given pattern", () => {
+    expect(Str.is("foo*", "foobar")).toBe(true);
+    expect(Str.is("baz*", "foobar")).toBe(false);
+
+    expect(Str.of("foobar").is("foo*")).toBe(true);
+    expect(Str.of("foobar").is("baz*")).toBe(false);
+  });
+
   it("can make a string's first character lowercase", () => {
     expect(Str.lcfirst("Midonis")).toBe("midonis");
 
