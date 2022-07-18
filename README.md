@@ -153,11 +153,11 @@ import { Str } from "@midonis/support"
 
 Str.finish('midonis/support', '/')
 
-// midonis/support/
+// 'midonis/support/'
 
 Str.finish('midonis/support/', '/')
 
-// midonis/support/
+// 'midonis/support/'
 ```
 
 ### `Str.lcfirst()`
