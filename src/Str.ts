@@ -127,6 +127,17 @@ export class Str {
   }
 
   /**
+   * Cap a string with a single instance of a given value.
+   *
+   * @param value string
+   * @param cap string
+   * @returns string
+   */
+  public static finish(value: string, cap: string): string {
+    return new Stringable(value).finish(cap);
+  }
+
+  /**
    * Make a string's first character lowercase.
    *
    * @param string string
