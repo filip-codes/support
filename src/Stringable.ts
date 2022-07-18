@@ -128,6 +128,16 @@ export class Stringable {
   }
 
   /**
+   * Cap a string with a single instance of a given value.
+   *
+   * @param cap string
+   * @returns string
+   */
+  public finish(cap: string): string {
+    return this.value.replace(new RegExp(`(?:${cap})+$`, "u"), "") + cap;
+  }
+
+  /**
    * Make a string's first character lowercase.
    *
    * @returns string
