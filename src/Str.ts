@@ -116,6 +116,17 @@ export class Str {
   }
 
   /**
+   * Determine if a given string ends with a given substring.
+   *
+   * @param value string
+   * @param needles string | string[]
+   * @returns boolean
+   */
+  public static endsWith(value: string, needles: string | string[]): boolean {
+    return new Stringable(value).endsWith(needles);
+  }
+
+  /**
    * Make a string's first character lowercase.
    *
    * @param string string
