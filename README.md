@@ -144,6 +144,22 @@ Str.endsWith('This is my string', ['string', 'awesome'])
 // true
 ```
 
+### `Str.finish()`
+
+The `Str.finish` method adds a single instance of the given value to a string if it does not already end with that value:
+
+```ts
+import { Str } from "@midonis/support"
+
+Str.finish('midonis/support', '/')
+
+// midonis/support/
+
+Str.finish('midonis/support/', '/')
+
+// midonis/support/
+```
+
 ### `Str.lcfirst()`
 
 The `Str.lcfirst` method makes a string's first character lowercase:
