@@ -100,6 +100,16 @@ Str.contains('This is my string', 'my')
 // true
 ```
 
+You may also pass an array of values to determine if the given string contains any of the values in the array:
+
+```ts
+import { Str } from "@midonis/support"
+
+Str.contains('This is my string', ['my', 'awesome'])
+
+// true
+```
+
 ### `Str.lcfirst()`
 
 The `Str.lcfirst` method makes a string's first character lowercase:
