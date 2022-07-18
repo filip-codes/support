@@ -138,6 +138,30 @@ export class Stringable {
   }
 
   /**
+   * Determine if a given string matches a given pattern.
+   *
+   * @param pattern string
+   * @returns string
+   */
+  public is(pattern: string): boolean {
+    const patterns = Array(pattern);
+
+    if (patterns.length === 0) return false;
+
+    for (let pattern of patterns) {
+      if (pattern == this.value) return true;
+
+      pattern = pattern.replace(/[*]/, ".*");
+
+      const regularExpression = new RegExp(`^${pattern}`, "u");
+
+      if (regularExpression.test(this.value)) return true;
+    }
+
+    return false;
+  }
+
+  /**
    * Make a string's first character lowercase.
    *
    * @returns string
