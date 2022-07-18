@@ -88,6 +88,18 @@ Str.camel('foo_bar')
 // 'fooBar'
 ```
 
+### `Str.contains()`
+
+The `Str.contains` method determines if the given string contains the given value. This method is case sensitive:
+
+```ts
+import { Str } from "@midonis/support"
+
+Str.contains('This is my string', 'my')
+
+// true
+```
+
 ### `Str.lcfirst()`
 
 The `Str.lcfirst` method makes a string's first character lowercase:
