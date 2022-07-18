@@ -97,6 +97,20 @@ export class Stringable {
   }
 
   /**
+   * Determine if a given string contains all array values.
+   *
+   * @param needles string[]
+   * @returns boolean
+   */
+  public containsAll(needles: string[]): boolean {
+    for (let i = 0; i < needles.length; i++) {
+      if (needles[i] !== "" && !this.contains(needles[i])) return false;
+    }
+
+    return true;
+  }
+
+  /**
    * Make a string's first character lowercase.
    *
    * @returns string
