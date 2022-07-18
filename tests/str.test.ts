@@ -59,6 +59,14 @@ describe("Str", () => {
     );
   });
 
+  it("can determine if a given string contains a given substring", () => {
+    expect(Str.contains("This is my string", "my")).toBe(true);
+    expect(Str.contains("This is my string", ["my", "awesome"])).toBe(true);
+
+    expect(Str.of("This is my string").contains("my")).toBe(true);
+    expect(Str.of("This is my string").contains(["my", "awesome"])).toBe(true);
+  });
+
   it("can make a string's first character lowercase", () => {
     expect(Str.lcfirst("Midonis")).toBe("midonis");
 
