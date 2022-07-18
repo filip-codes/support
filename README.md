@@ -110,6 +110,18 @@ Str.contains('This is my string', ['my', 'awesome'])
 // true
 ```
 
+### `Str.containsAll()`
+
+The `Str.containsAll` method determines if the given string contains all of the values in a given array:
+
+```ts
+import { Str } from "@midonis/support"
+
+Str.contains('This is my string', ['my', 'string'])
+
+// true
+```
+
 ### `Str.lcfirst()`
 
 The `Str.lcfirst` method makes a string's first character lowercase:
