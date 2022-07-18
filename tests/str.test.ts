@@ -81,6 +81,14 @@ describe("Str", () => {
     expect(Str.of("This is my string").endsWith(["string", "my"])).toBe(true);
   });
 
+  it("can cap a string with a single instance of a given value", () => {
+    expect(Str.finish("midonis/support", "/")).toBe("midonis/support/");
+    expect(Str.finish("midonis/support/", "/")).toBe("midonis/support/");
+
+    expect(Str.of("midonis/support").finish("/")).toBe("midonis/support/");
+    expect(Str.of("midonis/support/").finish("/")).toBe("midonis/support/");
+  });
+
   it("can make a string's first character lowercase", () => {
     expect(Str.lcfirst("Midonis")).toBe("midonis");
 
